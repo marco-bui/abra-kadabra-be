@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres
+    container_name: postgres
+    networks:
+      - postgres
+    environment:
+      - POSTGRES_USER=alakazam
+      - POSTGRES_PASSWORD=alakazam2024
+    ports:
+      - 5432:5432
+    volumes:
+      - .docker/data:/var/lib/postgres
+networks:
+  postgres:
+    driver: bridge

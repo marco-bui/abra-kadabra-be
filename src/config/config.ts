@@ -8,6 +8,7 @@ export const Config = {
   JWT: {
     JWT_SECRET_KEY: process.env.JWT_SECRET_KEY,
     JWT_SECRET: process.env.JWT_SECRET,
+    JWT_EXPIRED_TIME: 60 * 60 * 24 * 30,
   },
   DATABASE: {
     DATABASE_HOST: process.env.DATABASE_HOST || 'localhost',

@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { LoggerService } from './common/services/logger.service';
 import { Config } from './config/config';
 import { AuthModule } from './modules/auth/auth.module';
+import { CloudinaryModule } from './modules/cloudinary/cloudinary.module';
 import { DatabaseModule } from './modules/database/database.module';
 import { UserModule } from './modules/user/user.module';
 
@@ -14,6 +15,7 @@ import { UserModule } from './modules/user/user.module';
       secret: Config.JWT.JWT_SECRET,
       signOptions: { expiresIn: '120s' },
     }),
+    CloudinaryModule,
     AuthModule,
     DatabaseModule,
     UserModule,

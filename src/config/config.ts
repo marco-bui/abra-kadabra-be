@@ -19,4 +19,10 @@ export const Config = {
     DATABASE_PASSWORD: process.env.DATABASE_PASSWORD || '',
     DATABASE_NAME: process.env.DATABASE_NAME || 'alakazam',
   },
+  CLOUDINARY: {
+    CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME,
+    CLOUDINARY_API_KEY: process.env.CLOUDINARY_API_KEY,
+    CLOUDINARY_API_SECRET: process.env.CLOUDINARY_API_SECRET,
+    CLOUDINARY_FOLDER: process.env.CLOUDINARY_FOLDER,
+  },
 };

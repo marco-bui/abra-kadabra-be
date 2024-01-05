@@ -38,7 +38,7 @@ export class User extends BaseEntity {
   @Column({ type: 'text', nullable: true })
   bio: string;
 
-  @Column({ type: 'simple-array', array: true })
+  @Column({ type: 'simple-array', array: true, nullable: true })
   links: string[];
 
   @Column({ type: 'enum', enum: Role, nullable: false, default: Role.USER })
